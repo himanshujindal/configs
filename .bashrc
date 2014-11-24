@@ -62,16 +62,6 @@ alias df='df -h'
 alias ll='ls -lrtah'
 alias ip='ipconfig getifaddr en0'
 alias mkdir='mkdir -p'
-source ~/.commands.rc
-
-function title ()
-{
-case $TERM in
-*term | ansi | xterm-color | rxvt |vt100 | gnome* )
-echo -n -e "33]0;$*07" ;;
-*) ;;
-esac
-}
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
